@@ -37,4 +37,34 @@ public class MathExpression implements MathFunctional {
             return 0;
         }
     }
+
+    /**
+     *
+     * @param a
+     * @return
+     * Метод виводит на екран результат добутку цифр от целочисленного
+     * остатка от деления числа<p>int a<p/>
+     */
+    public int multiplyDivisionResult(int a) {
+        int result = 1;
+        for(int i = a; i != 0; i /=10) {
+            result = result * (i % 10);
+        }
+        return result;
+    }
+
+    /**
+     *
+     * @param a
+     * @return
+     * Метод виводит на екран результат суму цифр от целочисленного
+     * остатка от деления числа<p>int a<p/>
+     */
+    public int additionDivisionResult(int a) {
+        int result = 0;
+        for(int i = a; i != 0; i /= 10) {
+            result = result + (i % 10);
+        }
+        return  result;
+    }
 }
