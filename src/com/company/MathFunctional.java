@@ -11,4 +11,9 @@ public interface MathFunctional {
 
     int remainderOfDivision(int numbA, int numbB);
 
+    int multiplyDivisionResult(int a);
+
+    int additionDivisionResult(int a);
+
+
 }
