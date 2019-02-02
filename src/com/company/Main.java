@@ -21,7 +21,7 @@ public class Main {
         System.out.printf("%d / %d = %d and %d в остатке\n", num1, num2, resultDivision, resultRemainder);
 
 
-
+        scan.close();
 
     }
 }
